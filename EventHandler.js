@@ -31,8 +31,8 @@
         //console.log(document.querySelector("#john #name"));
         document.querySelector("#john #name").addEventListener("focus", (event) => {
         //console.log(document.querySelectorAll("#john .important"))
-            document.querySelectorAll("#john .important").forEach((element) => element.classList.add("shape"));
-          event.stopPropagation();
+            document.querySelectorAll("#john .important").forEach((element) => element.classList.add("shape")); // this will change class name to every child of john while traversing every element
+          event.stopPropagation(); // It will take care of event should not propogate beyond the handler
         });
     
 
