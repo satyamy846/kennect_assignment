@@ -1,0 +1,23 @@
+JWT stands for JSON web token whereas JSON stands for Javascript Object Notation.
+JWT is basically used to transfer the information in a secure way over the web. It can be used for an authentication system and can also be used for information exhange.
+There are three components-: 1. Header
+                             2. Payload
+                             3. Signature
+JWT example -:  header:{
+                          "alg": "H3443",   (Where alg is algorithm is used for encryption)
+                          "typ" : "JWT"     (Where typ is type of header this information contains)
+                       }
+                payload{
+                        "id": 123454,
+                        "name": "Satyam"
+                       }
+                signature {
+                            secret: satyamy846
+                          }
+                          
+Benefits of using JWT-: 1. JWT works on stateless authentication mechanism as they do not store state in database so it is more secured.
+                        2. JWT allow for more granual access model like who can have access to each part of the system as well as what they can do with that access.
+                        3. JWT is compact because its size can be sent through an URL, or inside HTTP header.Thers are three parts in it header,payload,and signature
+                        Whereas header in a JWT is mostly used to describe the cryptographic operations applied to the JWT like signing/decryption technique used on it.
+                        Payload is use to store all the user's data, and anyone can have access to this.
+                        Where Signature is third party JWT and used to verify the authenticity of token.
